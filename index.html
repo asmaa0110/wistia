@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>checkpoint2</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header-html">
+        <div class="logo"> <img class="logo-src" src="data:image/png;base64,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"> </div>
+        <div class="button">
+         <div class="first-button">
+                <a href="#" class="option-btn1"><strong>Product</strong></a>
+                <a href="#" class="option-btn"><strong>Learn</strong></a>
+                <a href="#" class="option-btn"><strong>About</strong></a>
+                <a href="#" class="option-btn"><strong>Support</strong></a>
+                <a href="#" class="option-btn"><strong>Princing</strong></a>
+         </div>       
+         <div class="second-button">
+                <a href="#" class="option-btn2">Feature</a>
+                <a href="#" class="option-btn2">Platform</a>
+                <a href="#" class="option-btn2">Integrations</a>
+                <a href="#" class="option-btn2">Soapbox</a>
+         </div>
+        </div>
+        <div class="connexion-button">
+                <i class="fas fa-user-plus"></i>
+                <a href="#" class="connexion-btn1">Sign up</a>  
+                <i class="fas fa-sign-in-alt"></i>
+                <a href="#" class="connexion-btn2">Login</a>
+        </div>
+    </header>
+    <main class="main-html">
+        <section class="section1">
+            <div class="paragraph">
+            <p class="para1">Video software </p>
+            <p class="para2"> for the video-loving business</p>
+            <a href="#" class="watch">Watch video</a>
+            </div>
+            <div class="imag">
+            <img class ="image" src="https://embedwistia-a.akamaihd.net/deliveries/88219b7618551dfa6893049604d2c8b2da4dca59.jpg?image_play_button_size=2x&amp;image_crop_resized=960x800&amp;image_play_button=1&amp;image_play_button_color=54bbffe0">
+            </div>
+        </section>
+        <section class="section2">
+            <div class="paragraph1">
+                    <i class="fas fa-chart-line"></i>
+                    <p class="parag1"><strong>Wistia Hosting : market your videos</strong></p><br>
+                    <p class="parag2"> Try our sleek, customizable player, advanced tools for marketers, and detailed analytics.<a href="#" class="Learn-more">Learn more</a></p>
+                    <a href="#" class="start">Start for free</a>
+            </div>
+            <div class="paragraph2">
+                    <i class="fas fa-desktop"></i>
+                    <p class="parag1"><strong>Soapbox: Create new videos, fast</strong></p><br>
+                    <p class="parag2"> Make professional videos in minutes with just your computer's camera and a smile.<a href="#" class="Learn-more">Learn more</a></p>
+                    <a href="#" class="start">Start for free</a>
+            </div>
+            <div class="paragraph3">
+                    <i class="fal fa-book"></i>
+                    <p class="parag1"><strong>Grow your video skills</strong></p><br>
+                    <p class="parag2"> In-depth guides for making. marketing. and measuring videos. Get inspired and get shooting.<a href="#" class="Learn-more">Learn more</a></p>
+                    <a href="#" class="start">Start for free</a>
+            </div>
+        </section>
+        <section class="section3">
+            <div class="papa">
+
+                <p class="pa">wistia is proud to help over 300,000 businesses grow with video</p>
+            </div>
+            <div class="imag">
+                <div class="logo-img">
+
+                    <img class="imgn" src="https://wistia.com/assets/main/multi-product-homepage/Mailchimp-7ebe21d6e1a8e73dfaa0a01cb2747dd7.svg">
+                </div>
+                <div class="logo-img">
+
+                    <img class="imgn" src="https://wistia.com/assets/main/multi-product-homepage/Moz-968d7370d103b9e8d54d8d6c5ccc25ef.svg">
+                </div>
+                <div class="logo-img">
+
+                    <img class="imgn" src="https://wistia.com/assets/main/multi-product-homepage/Zendesk-b2d6a2287655dc487ea7de701df73ed0.svg">
+                </div>
+                <div class="logo-img">
+
+                    <img class="imgn" src="https://wistia.com/assets/main/multi-product-homepage/Unbounce-f61750cbb6135bd4058243c8065f7652.svg">
+                </div>
+                <div class="logo-img">
+                    <img class="imgn" src="https://wistia.com/assets/main/multi-product-homepage/Casper-a6409becb07edc79730cdf36cad9c4ad.jpg">
+
+                </div>
+            </div>
+        </section>
+        <section class="section4">
+                <div class="paragrap1">
+                        <a href="/series/one-ten-one-hundred "><img alt="One, Ten, One Hundred" width ="300"src="//wistia.com/assets/main/multi-product-homepage/one-ten-one-hundred-series-2d339f485ef516fe44defed3eb881e85.jpg">
+                        </a>
+                        <p class="paragr1"><strong>One, Ten, One Hundred is here!</strong></p><br>
+                        <p class="paragr2"> Explore how budgetary constraints affect creativity—for better or worse—in our new original series.</p>
+                        <a href="#" class="link2">Watch it now</a>
+                </div>
+                <div class="paragrap2">
+                        <a href="/learn/product-updates/introducing-a-b-testing"><img alt="A/B testing" width ="300"src="//wistia.com/assets/main/multi-product-homepage/ab-testing-d6dbd218c72cfb3799332d67c3baee9a.png">
+                        </a>
+                        <p class="paragr1"><strong>A/B Test Your Videos in Wistia!</strong></p><br>
+                        <p class="paragr2"> Increase engagement, boost conversion rates, and find out which videos perform the best with our new A/B testing feature..</p>
+                        <a href="#" class="link2">Learn more</a>
+                </div>
+                <div class="paragrap3">
+                        <a href="/learn/culture/taking-on-debt-to-grow-our-own-way"><img alt="Wistia Co-Founders" width="300"src="//wistia.com/assets/main/multi-product-homepage/road-less-traveled-acaa9649794ba0c8f85388065c2c2f16.jpg">
+                        </a>
+                        <p class="paragr1"><strong>Taking the Road Less Traveled</strong></p><br>
+                        <p class="paragr2"> Learn how we built a creatively-driven, profitable business — all without raising additional funding or going public. </p>
+                        <a href="#" class="link2">Read the full story</a>
+                </div>
+     </main>
+    <footer>
+      <div class="update">
+          <p class="update-t">We've updated our <a href="#" class="Terms">Terms of Service</a>.</p>
+      </div>
+      <div class="pcls">
+          <div class="wistia">
+              <img class="wlogo" width="70" src="data:image/png;base64,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">
+              <p class="wp">Wistia is the video platform for business. And dogs. </p>
+              <p class="media"><strong>Follow us : </strong><a href="#">facebook</a>,<a href="#">Linkedin</a>,<a href="#">Twitter</a>,<a href="#">Instagram</a></p>
+            </div>
+
+          <div class="Product">
+                <p class="title"><strong>Product</strong></p>
+                <a href="#" class="prdt">Features</a><br>
+                <a href="#" class="prdt">Soapbox</a><br>
+                <a href="#" class="prdt">Princing</a><br>
+                <a href="#" class="prdt">Integrations</a>
+          </div>
+          <div class="Company">
+                <p class="title"><strong>Company</strong></p>
+                <a href="#" class="prdt">Team</a><br>
+                <a href="#" class="prdt">Jobs</a><br>
+                <a href="#" class="prdt">Brand Assets</a><br>
+                <a href="#" class="prdt">Agency Program</a><br>
+                <a href="#" class="prdt">Community</a>
+          </div>
+          <div class="Learn">
+                <p class="title"><strong>Learn</strong></p>
+                <a href="#" class="prdt">Production</a><br>
+                <a href="#" class="prdt">Marketing</a><br>
+                <a href="#" class="prdt">Sales</a><br>
+                <a href="#" class="prdt">Product Updates</a><br>
+                <a href="#" class="prdt">Costumer Showcase</a><br>
+                <a href="#" class="prdt">Culture</a>
+          </div>
+          <div class="Support">
+                <p class="title"><strong>Support</strong></p>
+                <a href="#" class="prdt">FAQ</a><br>
+                <a href="#" class="prdt">Status</a><br>
+                <a href="#" class="prdt">Help Center</a><br>
+                <a href="#" class="prdt">Help Videos</a>
+          </div>
+          <div class="rights">
+              <hr  width=800px >
+              <p class="all"><strong>© 2006-2018 All Rights Reserved. <a href="#">Privacy </a> and<a href="#"> Terms.</a></strong></p>
+          </div>
+        </div>
+    </footer>
+</body>
+</html>
